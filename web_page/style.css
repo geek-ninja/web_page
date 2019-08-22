@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Righteous', cursive;
+    font-size: 23px;
+}
+
+body {
+    background-image: url(retro2.jpg);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 4px;
+    border: 2px solid #fff;
+    border-radius: 30%;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn {
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav {
+    text-decoration: none;
+    float: right;
+    margin: 25px;
+}
+
+.btn:hover li {
+    transform: scale(1);
+    color: #f1f1f1;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    background: #3498db;
+    transform: rotate(45deg);
+    right: 50%;
+    top: 300%;
+}
+
+.btn:hover::before {
+    animation: aaa 0.7s 1;
+    top: -10%;
+    left: -10%;
+}
+
+@keyframes aaa {
+    0% {
+        left: -110%;
+        top: 90%;
+    }
+    50% {
+        left: 10%;
+        top: -30%;
+    }
+    100% {
+        top: -10%;
+        left: -10%;
+    }
+}
